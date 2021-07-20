@@ -60,6 +60,10 @@ jobs:
           echo `pwd`
           echo list_folder,
           echo `ls`
+          echo looking build,
+          echo `ls build`
+          echo looking app,
+          echo `ls app`
           
       ## Sign our artifact##
       - name: Sign artifact
