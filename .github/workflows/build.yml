@@ -74,6 +74,10 @@ jobs:
           echo `ls app/build/outputs/apk/simpsons`
           echo looking app=build=outputs=apk=wire,
           echo `ls app/build/outputs/apk/wire`
+          echo looking app=build=outputs=apk=simpsons=release,
+          echo `ls app/build/outputs/apk/simpsons/release/`
+          echo looking app=build=outputs=apk=wire=release,
+          echo `ls app/build/outputs/apk/wire/release/`
           echo looking app=build=generated,
           echo `ls app/build/generated`
           
