@@ -66,8 +66,10 @@ jobs:
           echo `ls app`
           echo looking app\build,
           echo `ls app/build`
-          echo looking app=build=output,
-          echo `ls app/build/output`
+          echo looking app=build=outputs,
+          echo `ls app/build/outputs`
+          echo looking app=build=generated,
+          echo `ls app/build/generated`
           
       ## Sign our artifact##
       - name: Sign artifact
