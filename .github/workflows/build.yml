@@ -87,8 +87,8 @@ jobs:
         uses: r0adkll/sign-android-release@v1.0.1
         with:
           releaseDirectory: |
-                  app/simpsons/release
-                  app/wire/release
+           app/build/outputs/apk/simpsons/release
+           app/build/outputs/apk/wire/release
           alias: ${{ secrets.KEYALIAS }}
           signingKeyBase64: ${{ secrets.KEYSTORE }}
           keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD }}
