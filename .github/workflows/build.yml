@@ -93,6 +93,14 @@ jobs:
           signingKeyBase64: ${{ secrets.KEYSTORE }}
           keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
+          
+      # Runs a set of commands using the runners shell
+      - name: List folder, signed?
+        run: |
+          echo current_folder,
+          echo `pwd`
+          echo looking app=build=outputs=apk=simpsons=release,
+          echo `ls app/build/outputs/apk/simpsons/release/`
 
       - name: Upload our APK
         uses: actions/upload-artifact@v2.2.0
