@@ -53,6 +53,14 @@ jobs:
           configuration-cache-enabled: true
           arguments: assembleRelease
           
+      # Runs a set of commands using the runners shell
+      - name: List folder
+        run: |
+          echo current_folder,
+          echo `pwd`
+          echo list_folder,
+          echo `ls`
+          
       ## Sign our artifact##
       - name: Sign artifact
         id: signArtifact
