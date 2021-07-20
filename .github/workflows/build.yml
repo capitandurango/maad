@@ -61,7 +61,6 @@ jobs:
           releaseDirectory: |
                   app/build/outputs/apk/release
                   app/build/outputs/bundle/release
-          output: build/release/signed
           alias: ${{ secrets.KEYALIAS }}
           signingKeyBase64: ${{ secrets.KEYSTORE }}
           keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD }}
