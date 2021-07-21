@@ -56,10 +56,10 @@ jobs:
       - name: Build Signed APK
         uses: victorbnl/build-signed-apk@main
         with:
-          keystore: ${{ secrets.keystore }}
-          keystore_password: ${{ secrets.keystore_password }}
-          key_alias: ${{ secrets.key_alias }}
-          key_password: ${{ secrets.key_password }}
+          keystore: ${{ secrets.KEYSTORE }}
+          keystore_password: ${{ secrets.KEYSTORE_PASSWORD }}
+          key_alias: ${{ secrets.KEYALIAS }}
+          key_password: ${{ secrets.KEY_PASSWORD }}
 
       # Runs a set of commands using the runners shell
       - name: List folder
