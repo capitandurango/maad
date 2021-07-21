@@ -17,6 +17,11 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    
+    lintOptions {
+        warningAsErrors true
+        abortOnError false
+    }
    
     buildTypes {
         debug {
@@ -27,10 +32,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
             buildConfigField "String", "URL_BASE", '"http://api.duckduckgo.com/"'
-        }
-        
-        lintOptions {
-          abortOnError false
         }
     }
 
