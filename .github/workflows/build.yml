@@ -53,6 +53,14 @@ jobs:
           configuration-cache-enabled: true
           arguments: assembleRelease
           
+      - name: Build Signed APK
+        uses: victorbnl/build-signed-apk@main
+        with:
+          keystore: ${{ secrets.keystore }}
+          keystore_password: ${{ secrets.keystore_password }}
+          key_alias: ${{ secrets.key_alias }}
+          key_password: ${{ secrets.key_password }}
+
       # Runs a set of commands using the runners shell
       - name: List folder
         run: |
